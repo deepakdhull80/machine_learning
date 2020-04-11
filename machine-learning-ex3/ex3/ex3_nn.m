@@ -76,6 +76,7 @@ rp = randperm(m);
 for i = 1:m
     % Display 
     fprintf('\nDisplaying Example Image\n');
+    
     displayData(X(rp(i), :));
 
     pred = predict(Theta1, Theta2, X(rp(i),:));
